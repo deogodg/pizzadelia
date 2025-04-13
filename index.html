@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Site da Pizzodelia com links e informações importantes.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🍕 Pizzodelia | Sabor e Tradição</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+  <header>
+    <pre class="ascii-title">
+ ______   __     ______     ______     ______     _____     ______     __         __     ______    
+/\  == \ /\ \   /\___  \   /\___  \   /\  __ \   /\  __-.  /\  ___\   /\ \       /\ \   /\  __ \   
+\ \  _-/ \ \ \  \/_/  /__  \/_/  /__  \ \ \/\ \  \ \ \/\ \ \ \  __\   \ \ \____  \ \ \  \ \  __ \  
+ \ \_\    \ \_\   /\_____\   /\_____\  \ \_____\  \ \____-  \ \_____\  \ \_____\  \ \_\  \ \_\ \_\ 
+  \/_/     \/_/   \/_____/   \/_____/   \/_____/   \/____/   \/_____/   \/_____/   \/_/   \/_/\/_/ 
+    </pre>
+    <p class="subtitulo">Sabor que conquista em cada fatia 🍕</p>
+  </header>
+
+  <main class="container principal"> 
+    <section class="caixa">
+      <div class="grid-imagens">
+
+        <div class="icone">
+          <a href="https://www.canva.com/design/DAGkdz2zu_g/6uNCw8iMDUGIh8sG8YCfIQ/view" target="_blank">
+            <img src="34.png" alt="Cardápio Pizzodelia">
+            <span class="btn">Ver Cardápio</span>
+          </a>
+        </div>
+
+        <div class="icone">
+          <a href="https://oquefazemosfrontend.my.canva.site/" target="_blank">
+            <img src="35.png" alt="Nosso site institucional">
+            <span class="btn">Institucional</span>
+          </a>
+        </div>
+
+        <div class="icone">
+          <a href="https://oquefazemosfrontend.my.canva.site/outras-materias" target="_blank">
+            <img src="36.png" alt="Outras matérias e conteúdos">
+            <span class="btn">Outros Conteúdos</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Pizzodelia. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  overflow-x: hidden;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url("gif pizza.gif") center center / cover no-repeat fixed;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom: 2px solid #ffcc70;
+  animation: slideInTop 1s ease;
+}
+
+.ascii-title {
+  font-family: monospace;
+  font-size: 12px;
+  white-space: pre;
+  color: #e45fffd3;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: #ffcc70;
+  font-style: italic;
+  animation: fadeIn 2s ease;
+}
+
+.principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  text-align: center; 
+  padding: 40px 20px;
+}
+
+.caixa {
+  padding: 50px 40px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 0 40px rgba(255,255,255,0.15);
+  max-width: 1200px;
+  width: 100%;
+  animation: fadeIn 1.5s ease;
+}
+
+.grid-imagens {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  animation: zoomIn 1.5s ease;
+}
+
+.icone img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.icone:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+}
+
+.btn {
+  margin-top: 12px;
+  background: linear-gradient(45deg, #ff7b00, #ffcc70);
+  padding: 12px 28px;
+  border-radius: 30px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 204, 112, 0.4);
+  animation: fadeInUp 1.2s ease;
+  display: inline-block;
+}
+
+.icone:hover .btn {
+  background: linear-gradient(45deg, #ff9900, #ffe08a);
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.5);
+  font-size: 0.9rem;
+  color: #aaa;
+  animation: fadeIn 2s ease;
+}
+
+@media (max-width: 768px) {
+  .icone img {
+    max-width: 100%;
+  }
+  .btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+  .caixa {
+    padding: 30px 20px;
+  }
+}
+
+/* Animations */
+@keyframes slideInTop {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+</style>
