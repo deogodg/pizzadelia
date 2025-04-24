@@ -18,13 +18,11 @@
     #intro {
       position: fixed;
       top: 0;
-      right: 0px;
-      left: 0px;
+      right: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       background-color: black;
-      
-     
       background-position: center;
       background-repeat: no-repeat;
       z-index: 9999;
@@ -33,7 +31,6 @@
       justify-content: center;
       flex-direction: column;
       animation: fadeIn 2s ease;
-      
     }
 
     #intro img {
@@ -176,7 +173,27 @@
         padding: 10px 20px;
       }
       .caixa {
-        padding: 30px 20px;
+        padding: 30px 15px;
+      }
+      .ascii-title {
+        font-size: 10px;
+      }
+      .principal {
+        padding: 20px 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .ascii-title {
+        font-size: 8px;
+        white-space: pre-wrap;
+      }
+      .subtitulo {
+        font-size: 1rem;
+      }
+      .btn {
+        width: 100%;
+        padding: 10px;
       }
     }
 
